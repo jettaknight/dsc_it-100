@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <sys/file.h>
 #include <termios.h>
-
+#include "serial.h"
 
 static int fd;
 
@@ -81,7 +81,7 @@ void serial_read(char *string)
 
 void serial_write(char *string)
 {
-    int retval = write(fd, data, strlen(string));
+    int retval = write(fd, string, strlen(string));
 
     // so, should we check the result?
 }
