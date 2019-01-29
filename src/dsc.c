@@ -86,9 +86,7 @@ static void *serial_task(void *arg)
         struct dsc_struct message;
 
         serial_read(input);
-        if (0 == dsc_decode(input, &message))
-        {
-            process_dsc_message(&message);
-        }
+        dsc_decode(input, &message);
+        process_dsc_message(&message);
     }
 }
