@@ -9,7 +9,7 @@
 
 
 
-void handle_POLL(struct dsc_struct *message)
+void handle_POLL(struct dsc_struct *message) {  }
 void handle_STATUS_REQUEST(struct dsc_struct *message) {  }
 void handle_LABELS_REQUEST(struct dsc_struct *message) {  }
 void handle_SET_TIME_DATE(struct dsc_struct *message) {  }

@@ -4,7 +4,8 @@
 
 #include <string.h>
 #include <stdbool.h>
-
+#include <sys/file.h>
+#include <termios.h>
 
 
 static int fd;
