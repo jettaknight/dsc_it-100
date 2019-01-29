@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <sys/file.h>
 #include <termios.h>
-#include "serial.h"
+#include "dsc_serial.h"
 
 static int fd;
 
